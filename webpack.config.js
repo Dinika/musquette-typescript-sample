@@ -7,6 +7,10 @@ module.exports = {
     entry: [
         './js/app.ts',
     ],
+    externals: {
+        bufferutil: "bufferutil",
+        "utf-8-validate": "utf-8-validate",
+    },
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js',
