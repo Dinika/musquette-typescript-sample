@@ -1,6 +1,8 @@
-import { MQTTSubject } from 'musquette';
+import axios from 'axios';
 
 const greeting: string = 'Hello World!';
 alert(greeting);
 
-const m = new MQTTSubject('ws://localhost:8080')
+const res = axios.get<boolean>('')
+
+res.then(body => console.log(body))
